@@ -1,0 +1,41 @@
+{
+  "name": "dsh-layered-memory",
+  "version": "0.1.0",
+  "description": "给 DeepSeek Harness 的四层记忆：核心层只读、内隐层可塑、外显长期可检索、短期层自动遗忘，带审计与遗忘调度。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "yinling2024",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yinling2024/dsh-layered-memory.git"
+  },
+  "homepage": "https://github.com/yinling2024/dsh-layered-memory#readme",
+  "bugs": {
+    "url": "https://github.com/yinling2024/dsh-layered-memory/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "memory",
+    "layered-memory",
+    "ai-companion"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

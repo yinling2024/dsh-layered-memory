@@ -1,0 +1,3 @@
+- insert:
+    - id: layered-memory
+      name: './lib/index.js'
